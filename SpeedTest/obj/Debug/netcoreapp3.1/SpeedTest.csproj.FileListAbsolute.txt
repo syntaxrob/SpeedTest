@@ -1,0 +1,13 @@
+D:\Education\SpeedTest.Console\SpeedTest\bin\Debug\netcoreapp3.1\SpeedTest.exe
+D:\Education\SpeedTest.Console\SpeedTest\bin\Debug\netcoreapp3.1\SpeedTest.deps.json
+D:\Education\SpeedTest.Console\SpeedTest\bin\Debug\netcoreapp3.1\SpeedTest.runtimeconfig.json
+D:\Education\SpeedTest.Console\SpeedTest\bin\Debug\netcoreapp3.1\SpeedTest.runtimeconfig.dev.json
+D:\Education\SpeedTest.Console\SpeedTest\bin\Debug\netcoreapp3.1\SpeedTest.dll
+D:\Education\SpeedTest.Console\SpeedTest\bin\Debug\netcoreapp3.1\SpeedTest.pdb
+D:\Education\SpeedTest.Console\SpeedTest\obj\Debug\netcoreapp3.1\SpeedTest.csprojAssemblyReference.cache
+D:\Education\SpeedTest.Console\SpeedTest\obj\Debug\netcoreapp3.1\SpeedTest.AssemblyInfoInputs.cache
+D:\Education\SpeedTest.Console\SpeedTest\obj\Debug\netcoreapp3.1\SpeedTest.AssemblyInfo.cs
+D:\Education\SpeedTest.Console\SpeedTest\obj\Debug\netcoreapp3.1\SpeedTest.csproj.CoreCompileInputs.cache
+D:\Education\SpeedTest.Console\SpeedTest\obj\Debug\netcoreapp3.1\SpeedTest.dll
+D:\Education\SpeedTest.Console\SpeedTest\obj\Debug\netcoreapp3.1\SpeedTest.pdb
+D:\Education\SpeedTest.Console\SpeedTest\obj\Debug\netcoreapp3.1\SpeedTest.genruntimeconfig.cache
