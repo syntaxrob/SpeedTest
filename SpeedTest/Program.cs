@@ -109,7 +109,12 @@ namespace SpeedTest
                 process.StartInfo = startInfo;
                 process.Start();
             };
-            
+
+            if (!DisplayResults(viewResults))
+            {
+                Console.WriteLine("\r\nDetails of this test can be found at {0}", FileName());
+            }
+
             Console.WriteLine("\r\nPress any key to quit");
             Console.ReadKey();
         }
