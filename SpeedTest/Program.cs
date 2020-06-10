@@ -28,6 +28,9 @@ namespace SpeedTest
             Console.Write("\r\nNumber of test cycles to run: ");
             var cycles = Console.ReadLine();
 
+            Console.Write("\r\nView test results after completion? Y/N ");
+            var viewResults = Console.ReadLine();
+
             for (var t = 1; t <= Int32.Parse(cycles); t++)
             {
                 var nic = nics.Single(n => n.Name == nicName);
@@ -94,18 +97,32 @@ namespace SpeedTest
             }
 
             //Open the results
-            Console.WriteLine("\r\nOpening results...");
-            System.Diagnostics.Process process = new System.Diagnostics.Process();
-            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
-            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
-            startInfo.FileName = "cmd.exe";
-            string _path = FileName();
-            startInfo.Arguments = string.Format("/C start {0}", _path);
-            process.StartInfo = startInfo;
-            process.Start();
+            if (DisplayResults(viewResults))
+            {
+                Console.WriteLine("\r\nOpening results...");
+                System.Diagnostics.Process process = new System.Diagnostics.Process();
+                System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+                startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+                startInfo.FileName = "cmd.exe";
+                string _path = FileName();
+                startInfo.Arguments = string.Format("/C start {0}", _path);
+                process.StartInfo = startInfo;
+                process.Start();
+            };
             
             Console.WriteLine("\r\nPress any key to quit");
             Console.ReadKey();
+        }
+
+        private static bool DisplayResults(string option)
+        {
+            if (option.ToUpper() == "Y")
+            {
+                return true;
+            }
+
+            return false;
+
         }
 
         private static double StdDev(List<double> values, double mean)
